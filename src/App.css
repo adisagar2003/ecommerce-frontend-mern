@@ -1,0 +1,11 @@
+button {
+  background-color: var(--red);
+  color: #fff;
+  font-weight: 800;
+  padding: 11.5px 23px;
+  width: 120px;
+}
+
+.green {
+  color: var(--green);
+}

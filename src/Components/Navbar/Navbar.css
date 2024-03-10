@@ -1,0 +1,126 @@
+.navbar {
+    height: 86px;
+    background-color: var(--white);
+    border-top: 1px solid grey;
+}
+
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo{
+    position: relative;
+    right: 25px;
+}
+
+.navbar-search {
+    width: 408px;
+    padding: 12px 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-search > input {
+    padding: 1px;
+    outline: none;
+    background-color: inherit;
+    border: none;
+    color: black;
+    z-index: 0;
+    transform: scale(1.1,1.1);
+}
+
+.navbar-search > button {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    border-radius: 4px;
+    background-color: var(--red);
+    border-radius:  0px 4px 4px 0px;
+    border: none;
+    padding: 10px;
+    right: 0px;
+}
+
+.navbar-icons {
+    display: flex;
+    color: var(--black);
+    gap:18px;
+    align-items: center;
+}
+
+.navbar-icons > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-responsive-button {
+    display: none;
+}
+
+.navbar-search-results {
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    left: 0px;
+    top: 0px;
+    color: black;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    top: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 9px 20px black;
+    padding: 14px;
+    transition: .2s all;
+    opacity: 0;
+}
+
+.navbar-search-results.active {
+    display: flex;
+    height: fit-content;
+    transform: .2s all;
+    opacity: 1;
+}
+
+.navbar-searched-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar-searched-data > div {
+    padding: 10px;
+    transition: .2s all;
+
+}
+
+.navbar-searched-data > div:hover {
+    background-color: #d2d2d2;
+    transition: .3s all;
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .navbar-search {
+        display: none;
+    }
+
+    .navbar-responsive-button {
+        display: flex;
+    }
+
+    .navbar-icons {
+        display: none;
+    }
+}
+

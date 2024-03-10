@@ -1,0 +1,142 @@
+.contact-section {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contact {
+    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 72px;
+    background-image: url("../../assets/images/contact.png");
+    border-radius: 15px;
+}
+
+.image-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+}
+
+.contact-main > h3 {
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.contact-main > span {
+    font-size: 18px;   
+    color: black;
+ 
+}
+
+.contact-input-container {
+    width: 473px;
+    height: 64px;
+    position: relative;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.contact-input-container input{
+    outline: none;
+    background-color: inherit;
+    border: none;
+    color: black;
+    width: 100%;
+}
+
+.contact.button {
+    height: 64px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0px;
+}
+
+.contact-button {
+    height: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+
+.contact-button:hover {
+    background-color: rgb(255, 41, 41);
+    transition: .2s all;
+    cursor: pointer;
+}
+
+.contact-image {
+    display: flex;
+    align-items: flex-end;
+    vertical-align:super;
+}
+
+.send-message-icon {
+    margin-right: 20px;
+    color: #b2b2b2;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        width: 100%;
+    }
+
+    .contact-main {
+        width: 100%;
+      
+    }
+    .contact-main > h3 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+
+    .contact > img {
+        display: none;
+    }
+
+    .contact-input-container {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 23px;
+    }
+
+    .delivery-guy {
+        display: none;
+    }
+
+    .contact .button {
+        margin: unset;
+        padding: unset;
+        width: unset;
+        padding: 0 12px;
+    }
+}

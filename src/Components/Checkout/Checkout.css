@@ -1,0 +1,31 @@
+.checkout-section {
+    background-color: #fff;
+}
+
+.checkout-container {
+    padding: 15px;
+    border-radius: 15px;
+    border: #7a7aa7;
+    width: 100%;
+    color: var(--black);
+    background-color: white;
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+}
+
+.checkout-summary {
+    margin: auto;
+}
+
+.checkout-total-charges {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.button-checkout {
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}

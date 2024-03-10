@@ -1,0 +1,81 @@
+.popular-products {
+    background-color: #fff;
+    position: relative;
+}
+
+.pp-main {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    padding-bottom: 50px;
+}
+
+.pp-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 0;
+}
+
+.pp-navbar > h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.pp-nav-items {
+    display: flex;
+    gap: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.active-link {
+    color: var(--green);
+}
+
+.product-flex-price {
+    padding-top: 20px;
+
+}   
+
+.card-button {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 85px;
+    height: 36px;
+    padding: 9px 20px;
+}
+
+.pp-grid-items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 43px;   
+}
+
+@media (max-width: 768px) {
+    .pp-main {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pp-nav-items {
+        display: none;
+    }
+
+    .pp-grid-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    
+}

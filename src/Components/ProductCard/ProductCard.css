@@ -1,0 +1,94 @@
+.product-card {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.456);
+    color :black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 29px 21px;
+}
+
+.product-card > img {
+    width: 246px;
+    height: 246px;
+    border-radius: 15px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.product-content > .food-type {
+    font-weight: 600;
+    color: var(--black);
+    font-size: 12px;
+}
+
+.product-content > .food-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.product-rating {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.product-rating >:last-child {
+    color: #B6B6B6;
+}
+
+.product-owner {
+    font-weight: 400;
+    color: #B6B6B6;
+}
+
+.product-owner > span {
+    color: red;
+    font-weight: 600;
+}
+
+.product-flex-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 18px;
+}
+
+.crossed-text {
+    text-decoration:line-through;
+    color: #B6B6B6;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-button >:first-child {
+    position: relative;
+    top: 1px;
+}
+
+.card-button:hover {
+    background-color: red;
+    cursor: pointer;
+}

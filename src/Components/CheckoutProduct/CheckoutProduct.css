@@ -1,0 +1,26 @@
+.checkout-product {
+    width: 400px;
+    height: 140px;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #d0cece;
+    text-align: justify;
+}
+
+.checkout-product > img {
+    width: 100px;
+    object-fit: cover;
+    justify-self: flex-start;
+}
+
+.checkout-price {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-weight: 700;
+    color: var(--green);
+}
